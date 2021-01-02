@@ -1,0 +1,1 @@
+# Smarthings Switch Toggle Script
