@@ -1,11 +1,14 @@
 import aiohttp
 import pysmartthings
 import asyncio
+import os 
 
 device_name = ''
+path = os.path.dirname(__file__)
 
 def getToken():
-    token_file = open('token.key','r')
+    token_file = os.path.join(path,'token.key')
+    token_file = open(token_file,'r')
     token = token_file.read().strip()
     token_file.close()
     return token
